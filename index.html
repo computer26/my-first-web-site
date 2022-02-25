@@ -3,59 +3,79 @@
 <head>
   <title>talking</title>
   <meta charet="utf-8">
+  <script>
+  function pop() { window.open("pop,html", "pop", "width=400,height=500,
+  history=no,resizable=no,status=no,scrollbars=yes,menubar=no") }
+  </script>
   <style>
-  body{
-    margin:0;
-  }
-  h1{
-    border-bottom:1px solid gray;
-    text-align:center;
-  }
-  #A{
-    color:red;
-    font-size:20px;
-  }
-  #B{
-    font-size:30px;
-  }
+    body{
+      margin:0;
+    }
+    h6{
+      margin:0px;
+      text-align:right;
+      color:white;
+    }
+    ol{
+      margin:0px;
+    }
+    .PlayList{
+      margin-bottom:0px;
+    }
+    #A{
+      color:red;
+      font-size:20px;
+    }
+    #B{
+      font-size:30px;
+    }
+    #C{
+      padding-left:5px;
+    }
   </style>
 </head>
-<body>
-  <h1>
-    코딩 방
-  </h1>
-  <input type="button" value="night" onclick="
+<body onload="javascript:pop()">
+  팝업창 띄우기
+  <a id="D" href="https://computer26.github.io/my-first-web-site/">
+	   <img src="C:/Users/siyou/OneDrive/바탕 화면/web/사진/WEB image.png"
+     height="300" width="1270" align="center" border="0">
+  <a>
+  <h6>제작자 : 이충헌, 박세인</h6>
+  <input id="C" type="button" style="WIDTH: 50pt; HEIGHT: 25pt; float: right;" value="야간 모드" onclick="
     var target = document.querySelector('body');
-    if(this.value === 'night'){
+    if(this.value === '야간 모드'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
-      this.value = 'day';
+      this.value = '기본';
     }else{
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
-      this.value = 'night';
+      this.value = '야간 모드';
     }
   ">
   <ol>
     <div id="B">※규칙※</div>
-    <li>험한 말 사용 금지</li>
-    <li>인신 공격 금지</li>
-    <li>공부 중에 공부랑 상관 없는 얘기 금지</li>
-    <li>'화장실 갔다 온다'와 '바람 쐬러 가자'와 같은 말들은 가능</li>
-  </ol><br>
+    <li>오잉</li>
+    <li>오읭?</li>
+    <li>으읭?</li>
+    <li>읭?</li>
+  </ol>
   <p>
     <div id="A"><a href="https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA"
      target="_blank" title="htmls speicification">생활코딩 유튜브 바로가기</a></div>
-  </p><br>
-    <p>
+  </p>
+    <p class = "PlayList">
       충헌's Play List
     </p>
-    <div><a href="https://www.youtube.com/watch?v=9q36OHz82As" target="_blank" title="htmls speicification"><u> '박혜원-그런 일은' 1시간</u></a></div><br>
-    <p>
+    <div><a href="https://www.youtube.com/watch?v=9q36OHz82As" target="_blank"
+    title="htmls speicification"><u>'박혜원-그런 일은' 1시간
+    <img src="C:/Users/siyou/OneDrive/바탕 화면/web/사진/YouTube.png" height="12" width="18"></u></a></div><br>
+    <p class = "PlayList">
       세인's Play List
     </p>
-    <div><a href="https://www.youtube.com/watch?v=d41r5AAKoXA" target="_blank" title="htmls speicification"><u>슬픈 팝송 모음</u></a></div>
-
+    <div><a href="https://www.youtube.com/watch?v=d41r5AAKoXA" target="_blank"
+    title="htmls speicification"><u>슬픈 팝송 모음
+    <img src="C:/Users/siyou/OneDrive/바탕 화면/web/사진/YouTube.png" height="12" width="18"></u></a></div>
 
 
 
