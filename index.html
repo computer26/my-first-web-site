@@ -3,92 +3,121 @@
 <head>
   <title>talking</title>
   <meta charet="utf-8">
-  <script>
-  function pop() { window.open("pop.html", "pop", "width=400,height=500,
-  history=no,resizable=no,status=no,scrollbars=yes,menubar=no") }
-  </script>
   <style>
     body{
       margin:0;
     }
-    h6{
-      margin:0px;
-      text-align:right;
-      color:white;
-    }
     ol{
       margin:0px;
+    }
+    a{
+      text-decoration:none;
+      color:inherit;
     }
     .PlayList{
       margin-bottom:0px;
     }
-    #A{
-      color:red;
-      font-size:20px;
-    }
-    #B{
+    .상위리스트{
       font-size:30px;
     }
-    #C{
+    .하위리스트{
+      font-size:15px;
+    }
+    #A{
       padding-left:5px;
     }
+
+
+
   </style>
 </head>
-<body onload="javascript:pop()">
-  <a id="D" href="https://computer26.github.io/my-first-web-site/">
+<body>
+  <a href="https://computer26.github.io/my-first-web-site/">
 	   <img src="https://www.tutorialrepublic.com/lib/images/html-illustration.png"
-     height="300" width="1270" align="center" border="0">
-  <a>
-  <h6>제작자 : 이충헌, 박세인</h6>
-  <input id="C" type="button" style="WIDTH: 50pt; HEIGHT: 25pt; float: right;" value="야간 모드" onclick="
-    var target = document.querySelector('body');
-    if(this.value === '야간 모드'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = '기본';
-    }else{
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = '야간 모드';
-    }
-  ">
-  <ol>
-    <div id="B">※규칙※</div>
-    <li>오잉</li>
-    <li>오읭?</li>
-    <li>으읭?</li>
-    <li>읭?</li>
-  </ol>
-  <p>
-    <div id="A"><a href="https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA"
-     target="_blank" title="htmls speicification">생활코딩 유튜브 바로가기</a></div>
-  </p>
-    <p class = "PlayList">
-      충헌's Play List
-    </p>
-    <div><a href="https://www.youtube.com/watch?v=9q36OHz82As" target="_blank"
-    title="htmls speicification"><u>'박혜원-그런 일은' 1시간
-    <img src="C:/Users/siyou/OneDrive/바탕 화면/web/사진/YouTube.png" height="12" width="18"></u></a></div><br>
-    <p class = "PlayList">
-      세인's Play List
-    </p>
-    <div><a href="https://www.youtube.com/watch?v=d41r5AAKoXA" target="_blank"
-    title="htmls speicification"><u>슬픈 팝송 모음
-    <img src="C:/Users/siyou/OneDrive/바탕 화면/web/사진/YouTube.png" height="12" width="18"></u></a></div>
+     height="220" width="1280" align="center" border="0">
+  </a>
+  <div style="display:grid; grid-template-columns:300px 1fr;">
+    <div style="border-right:2px solid gray;">
+      <ul>
+        <li class="상위리스트"><a href="https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA"
+         target="_blank" title="htmls speicification">생할코딩 유튜브</a>
+          <ol class="하위리스트">
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb"
+             target="_blank" title="htmls speicification">WEB1 - HTML & Internet</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B"
+             target="_blank" title="htmls speicification">WEB2 - CSS</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf"
+             target="_blank" title="htmls speicification">WEB2 - JavaScript</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMA52uRBmSwqcvtI5IMoFclJ"
+             target="_blank" title="htmls speicification">WEB2 - Home Server</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMCI75J-rC8yZSVGZq3gYsFp"
+             target="_blank" title="htmls speicification">WEB2 - Domain Name System</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMDMxfZEpLbzHPZUEwObEaZq"
+             target="_blank" title="htmls speicification">WEB2 - Python</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I"
+             target="_blank" title="htmls speicification">WEB2 - PHP</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh"
+             target="_blank" title="htmls speicification">WEB3 - PHP & MySQL</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMBe0848t2_ZUgFNJdanOA_I"
+             target="_blank" title="htmls speicification">DATABASE1</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMCgrP_9HL3dAcvdt8qOZxjW"
+             target="_blank" title="htmls speicification">DATABASE2 - MySQL</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLuHgQVnccGMA9-1PvblBehoGg7Pu1lg6q"
+             target="_blank" title="htmls speicification">WEB3 - Ajak</a></li>
+          </ol>
+        </li><br>
+        <li class="상위리스트">Lee's Play List
+          <ul class="하위리스트">
+            <li><a href="https://www.youtube.com/watch?v=lMWrvEaW3NM"
+             target="_blank" title="htmls speicification">그런 일은-박혜원</a></li>
+            <li></li>
+          </ul>
+        </li><br>
+        <li class="상위리스트">Park's Play List
+          <ul class="하위리스트">
+            <li><a href="https://www.youtube.com/watch?v=i-ZrxnU87h4&list=WL&index=40"
+              target="_blank" title="htmls speicification">슬픈 팝송 모음</a></li>
+            <li><a href="https://www.youtube.com/watch?v=0EvXbm_koNM"
+              target="_blank" title="htmls speicification">전상근 모음</a></li>
+            <li><a href="https://www.youtube.com/watch?v=1LfTwcaseAc"
+              target="_blank" title="htmls speicification">임재현 모음</a></li>
+            <li><a href=""
+              target="_blank" title="htmls speicification"> 모음</a></li>
+          </ul>
+        </li><br>
+      </ul>
+    </div>
+    <div>
+      <p style="margin:0px;">
+        <div style="margin:0px; text-align:right; color:white;">제작자 : 이충헌, 박세인</div>
+        <input id="A" type="button" style="WIDTH: 50pt; HEIGHT: 25pt; float: right;" value="야간 모드" onclick="
+          var target = document.querySelector('body');
+          if(this.value === '야간 모드'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = '기본';
+          }else{
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = '야간 모드';
+          }
+        ">
+      </p>
 
 
 
 
 
 
-
-
-
-
-
-  <p>
-  <div id="disqus_thread"></div>
-  <script>
+      <div style="text-align:center;">
+        <div style="color:red; font-size:20px;">※채팅 규칙※</div>
+        1. 오잉?<br>
+        2. 오읭?<br>
+        3. 으읭?<br>
+        4. 읭?
+      </div>
+    <div id="disqus_thread"></div>
+    <script>
       /**
       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
@@ -104,8 +133,21 @@
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
       })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <script id="dsq-count-scr" src="//park-sein.disqus.com/count.js" async></script>
-</p>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <script id="dsq-count-scr" src="//park-sein.disqus.com/count.js" async></script>
+    </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
